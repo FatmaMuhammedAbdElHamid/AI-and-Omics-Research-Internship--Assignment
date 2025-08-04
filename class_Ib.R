@@ -43,3 +43,15 @@ str(data)
 
 # Create a new variable for smoking: 1 for "Yes", 0 for "No"
 data$smoker_num <- ifelse(data$smoker_fac == "No",0,1 )
+
+# Save file  as CSV
+write.csv(data, file = "clean_data/patient_info_clean.csv")
+
+# save R script
+# ctrl + s
+
+# Save the entire R workspace
+save.image(file = "Fatma_Class_Ib_Assignment.RData")
+
+
+
